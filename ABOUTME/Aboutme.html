@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aboutme</title>
+        <link rel="stylesheet" href="Aboutme.css" />
+        <script src="Aboutme.js"></script>
+    </head>
+
+    <body>
+        <h1>BEMUTATKOZÁS</h1>
+        <br>
+        <p style="font-size: 20px;"><big>Bartáné Puskár Klárának</big> hívnak. 51 éves vagyok. Házas. Két gyermekkemmel
+            és
+            férjemmel (és UBUL teknőssel <img src="../resources/UBUL.jpg" width="60px" height="60px"> Pilisjászfalun
+            élek egy kertes házban. <img src="../resources/kerteshaz.jpg" width="100 px">
+        </p>
+        <p style="font-size: 20px" ;>Jelenleg egy állami <a href="https://youtu.be/N7X0aqpFJqs"
+                alt="Munkaügyek sorozat legjobb jelenetei"> hivatalban</a>dolgozom, ami néha igen fárasztó, ezért
+            szeretném új területen kipróbálni magam és ismét tanulni.</p>
+        <br>
+        <p><i><b>"Mindenki annyit ér, amennyit akar érni, amennyit tanul, amennyit lát. (...) Minél többet tudsz, minél
+                    többet
+                    tanulsz, annál több vagy."</b></i></p>
+        <hr>
+        <p><u>
+                <h3>Néhány érdekekesség a nevemmel kapcsolatosan:</h3>
+            </u></p>
+        <ul>
+            <li>A nevem latin megfelelője <b>Clarus</b> jelentése: <b>fényes, tiszta, ragyogó.</b></li>
+            <br>
+            <li>Már az oviban is a <i>napocska</i> <img src="../resources/napocska.jpg" width="45px" height="45px"> volt
+                a jelem.</li>
+            <br>
+            <li>Nagyon szeretem a világos tereket és a fényt is. Kedvenc évszakom az ősz
+                <a href="https://papelito.hu/shop_ordered/90083/pic/Tartalomiras/hullo-falevel.jpg"> <img
+                        src="../resources/oszl.jpg" , height=40>
+                </a>
+                a csodás fényeivel.
+            </li>
+        </ul>
+        <hr>
+        <br>
+        <table class="">
+            <th>
+            <td style="background-color: rgb(132, 184, 129);"><b>Kedvenc</b></td>
+            </th>
+            <tr>
+                <td style="background-color: rgb(173, 230, 181); text-align: left" ;><b>Étel</b></td>
+                <td>rántott hús</td>
+            </tr>
+            <td style="background-color: rgb(173, 230, 181); text-align: left; width: 70px"><b>Állat</b></td>
+            <td>teknős</td>
+            </tr>
+            </tr>
+            <td style="background-color:  rgb(173, 230, 181); text-align: left;width: 70px"><b>Mozgás</b></td>
+            <td>jóga,tajcsi</td>
+            </tr>
+            </tr>
+            <td style="background-color:  rgb(173, 230, 181); text-align: left; width: 70px"><b>Zene</b></td>
+            <td>bármi, ami <a href="https://www.youtube.com/watch?v=Z3DT625kSyo">jazz és funky</a></td>
+            </tr>
+            </tr>
+            <td style="background-color:  rgb(173, 230, 181); text-align: left; width: 70px"><b>Növény</b></td>
+            <td>albízia</td>
+            </tr>
+        </table>
+        <br>
+        <h3 id="resulttext">Keresd meg HOVÁ szeretnék elutazni még és HOL VOLTAM már!</h3>
+
+        <div>
+            <button id="button1" onclick=citySelected('nemvoltam','button1')>ISZTAMBUL</button>
+            <button id="button2" onclick=citySelected('nemvoltam','button2')>BARCELONA</button>
+            <button id="button3" onclick=citySelected('nemvoltam','button3')>ALBÁNIA</button>
+            <button id="button4" onclick=citySelected('nemvoltam','button4')>IZLAND</button>
+            <br>
+            <p> </p>
+            <button id="button5" onclick=citySelected('voltam','button5')>VALETTA</button>
+            <button id="button6" onclick=citySelected('nemvoltam','button6')>GRANADA</button>
+            <button id="button7" onclick=citySelected('nemvoltam','button7')>EGYIPTOM</button>
+            <button id="button8" onclick=citySelected('voltam','button8')>MARRAKESH</button>
+            <br>
+            <p> </p>
+            <button id="button9" onclick=citySelected('voltam','button9')>PÁRIZS</button>
+            <button id="button10" onclick=citySelected('nemvoltam','button10')>NEW YORK</button>
+            <button id="button11" onclick=citySelected('voltam','button11')>BRÜSSZEL</button>
+            <button id="button12" onclick=citySelected('voltam','button12')>ÚJ-ZÉLAND</button>
+            <br>
+            <p> </p>
+            <button id="button13" onclick=citySelected('voltam','button13')>LONDON</button>
+            <button id="button14" onclick=citySelected('voltam','button14')>RÓMA</button>
+            <button id="button15" onclick=citySelected('voltam','button15')>PRÁGA</button>
+            <button id="button16" onclick=citySelected('voltam','button16')>MILÁNÓ</button>
+            <p> </p>
+            <button id="button17" onclick=citySelected('voltam','button17')>GDANSK</button>
+            <button id="button18" onclick=citySelected('voltam','button18')>KRAKKÓ</button>
+            <button id="button19" onclick=citySelected('voltam','button19')>BÉCS</button>
+            <button id="button20" onclick=citySelected('nemvoltam','button20')>STOCKHOLM</button>
+            <br>
+            <br>
+            <button id="Alaphelyzetgomb" onclick=location.reload()>Alaphelyzet!</button>
+        </div>
+        <br>
+        <p><b>Hobbyjaim, amikre sajnos kevés időm marad, mert ezt a bemutatkozást már jó ideje "reszelem":</b></p>
+        <div class="list">
+            <ul>
+                <li>Olvasás</li>
+                <li>Főzés, sütés</li>
+                <li>Kirándulás</li>
+                <li>Kertészkedés</li>
+                <li>Lakberebdezés</li>
+            </ul>
+        </div>
+        <br><br><br>
+        <div class="profile" class="eastereggarea">
+            <br><br>
+            <h3>
+                <p>Mint láthatjátok, még sok a dolgom!</p>
+            </h3>
+            <img src="../resources/smile2.jpg" onclick="window.open('Aboutme1aloldal.html' ,'_blank')" width="60px"
+                height="60px" />
+        </div>
+
+</html>
